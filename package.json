@@ -1,0 +1,22 @@
+{
+  "name": "shopinglist",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "tslint"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "husky": "^3.0.2",
+    "tslint": "^5.18.0"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run lint",
+      "pre-push": "npm run lint"
+    }
+  }
+}
